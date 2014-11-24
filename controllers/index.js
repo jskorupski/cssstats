@@ -29,7 +29,6 @@ module.exports = function(obj) {
     //{ name: 'BBC', url: 'http://bbc.com' },
     { name: 'Kickstarter', url: 'http://kickstarter.com' },
     { name: 'Etsy', url: 'http://etsy.com' },
-    { name: 'Squarespace', link: 'http://squarespace.com' },
     { name: 'Bootstrap', link: 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' },
     { name: 'Foundation', link: 'http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css' },
     { name: 'Pure CSS', link: 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css' },
