@@ -49,7 +49,7 @@
 </section>
 
 <section id="declarations" class="mb4">
-  <h1 class="h2 m0">Total Declarations</h1>
+  <h1 class="h2 m0"><a href="#declarations" class="text-link dark-gray">Total Declarations</a></h1>
   <div class="flex flex-wrap mxn2">
     <div class="col-6 sm-col-4 lg-col-2 p2">
       <p class="bold lh1 m0">Font Size</p>
@@ -80,8 +80,10 @@
 
 <section id="unique-colors" class="mb4">
   <h2>
-    {{ uniques.color.length }}
-    {{pluralize uniques.color.length 'Unique Color' 'Unique Colors' }}
+    <a href="#unique-colors" class="dark-gray text-link">
+      {{ uniques.color.length }}
+      {{ pluralize uniques.color.length 'Unique Color' 'Unique Colors' }}
+    </a>
   </h2>
   <div class="flex flex-wrap mxn2">
     {{#each uniques.color }}
@@ -95,8 +97,10 @@
 
 <section id="unique-background-colors" class="mb4">
   <h2>
-    {{ uniques.backgroundColor.length }}
-    {{pluralize uniques.backgroundColor.length 'Unique Background Color' 'Unique Background Colors' }}
+    <a href="#unique-background-colors" class="text-link dark-gray">
+      {{ uniques.backgroundColor.length }}
+      {{pluralize uniques.backgroundColor.length 'Unique Background Color' 'Unique Background Colors' }}
+    </a>
   </h2>
   <div class="flex flex-wrap mxn2">
     {{#each uniques.backgroundColor }}
@@ -114,10 +118,12 @@
 
 <section id="unique-font-sizes" class="mb4">
   <h2>
-    {{ uniques.fontSize.length }}
-    {{pluralize uniques.fontSize.length 'Unique Font Size' 'Unique Font Sizes' }}
+    <a href="#unique-font-sizes" class="text-link dark-gray">
+      {{ uniques.fontSize.length }}
+      {{ pluralize uniques.fontSize.length 'Unique Font Size' 'Unique Font Sizes' }}
+    </a>
   </h2>
-  <div class="">
+  <div>
     {{#each uniques.fontSizeSorted }}
       <div class="bold truncate mb1" style="font-size:{{ this.value }}">
         Font Size {{ this.value }}
@@ -128,8 +134,10 @@
 
 <section id="unique-font-families" class="mb4">
   <h2>
-    {{ uniques.fontFamily.length }}
-    {{pluralize uniques.fontFamily.length 'Unique Font Family' 'Unique Font Families' }}
+    <a href="#unique-font-families" class="text-link dark-gray">
+      {{ uniques.fontFamily.length }}
+      {{pluralize uniques.fontFamily.length 'Unique Font Family' 'Unique Font Families' }}
+    </a>
   </h2>
   {{#each uniques.fontFamily }}
     <div class="h3 bold break-word mb1" style="font-family:{{ this.value }}">
@@ -140,7 +148,11 @@
 
 
 <section id="unique-totals" class="mb4">
-  <h1 class="h2 mt0">Total vs. Unique Declarations</h1>
+  <h1 class="h2 mt0">
+    <a href="#unique-totals" class="text-link dark-gray">
+      Total vs. Unique Declarations
+    </a>
+  </h1>
   <div class="flex flex-wrap mb4">
     <div class="col-4 lg-col-2 mb4 center">
       {{uniques_graph uniquesGraph.width uniquesGraph.max }}
@@ -170,7 +182,11 @@
 </section>
 
 <section id="specificity-graph" class="mb4">
-  <h1 class="h2 mt0">Specificity Graph</h1>
+  <h1 class="h2 mt0">
+    <a href="#specificity-graph" class="text-link dark-gray">
+      Specificity Graph
+    </a>
+  </h1>
   {{line_graph specificityGraph 1152 320 }}
   <p>
     Base 10 specificity score for each selector by source order.
@@ -180,7 +196,11 @@
 </section>
 
 <section id="rulesize-graph" class="mb4">
-  <h1 class="h2 mt0">Ruleset Size</h1>
+  <h1 class="h2 mt0">
+    <a href="#rulesize-graph" class="text-link dark-gray">
+      Ruleset Size
+    </a>
+  </h1>
   {{line_graph rulesizeGraph 1152 320 }}
   <p>
     Number of declarations per ruleset
@@ -188,9 +208,11 @@
 </section>
 
 <section id="media-queries" class="mb4">
-  <h1 class="h2 m0">
-    {{number stats.aggregates.mediaQueries.length }}
-    {{pluralize stats.aggregates.mediaQueries.length 'Media Query' 'Media Queries' }}
+  <h1 class="h2 m0" id="media-queries">
+    <a href="#media-queries" class="text-link dark-gray">
+      {{number stats.aggregates.mediaQueries.length }}
+      {{pluralize stats.aggregates.mediaQueries.length 'Media Query' 'Media Queries' }}
+    </a>
   </h1>
   <div class="flex flex-wrap mxn2">
     {{#each stats.aggregates.mediaQueries }}
@@ -203,7 +225,9 @@
 
 <section id="raw-css" class="mb4 print-hide">
   <h1 class="h2">
-    Raw CSS
+    <a href="#raw-css" class="text-link dark-gray">
+      Raw CSS
+    </a>
   </h1>
     {{#if source }}
     <ul class="list-reset">
