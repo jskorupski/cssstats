@@ -27,19 +27,19 @@ hr {
 .text-link,
 .text-link:link,
 .text-link:visited {
-  color: var(--dark-gray);
-  transition: color .15s ease-in;
+  opacity: 1;
+  transition: opacity .15s ease-in;
 }
 
 .text-link:hover {
-  color: var(--mid-gray);
-  transition: color .15s ease-in;
+  opacity: .5;
+  transition: opacity .15s ease-in;
 }
 .text-link:active {
-  color: var(--light-gray);
-  transition: color .15s ease-in;
+  opacity: .7;
+  transition: opacity .15s ease-in;
 }
 .text-link:focus {
-  color: var(--blue);
-  transition: color .15s ease-in;
+  opacity: .8;
+  transition: opacity .15s ease-in;
 }
