@@ -1,6 +1,6 @@
 {
   "name": "rprtr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "body-parser": "~1.8.1",
     "chartable": "0.0.1",
