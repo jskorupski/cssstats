@@ -37,7 +37,8 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "css": "gulp css"
+    "css": "gulp css",
+    "dev": "gulp watch"
   },
   "license": "MIT"
 }
