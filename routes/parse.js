@@ -27,7 +27,7 @@ router.post('/', function(req, res) {
         res.redirect('stats?link=' + encodeURIComponent(url));
       } else {
         res.redirect('stats?url=' + encodeURIComponent(url));
-
+        
       }
     } else {
       res.render('index', { error: 'Please provide a valid url' });

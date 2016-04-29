@@ -24,7 +24,7 @@ module.exports = {
 
   getCssFromUrl: function(url, ua) {
 
-    var deferred = q.defer();
+     var deferred = q.defer();
 
     var newCookieJar = request.jar();
     var options =  {
