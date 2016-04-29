@@ -26,8 +26,7 @@ router.post('/', function(req, res) {
       if (isCss(url)) {
         res.redirect('stats?link=' + encodeURIComponent(url));
       } else {
-        res.redirect('stats?url=' + encodeURIComponent(url));
-        
+        res.redirect('stats?url=' + encodeURIComponent(url) + ua);
       }
     } else {
       res.render('index', { error: 'Please provide a valid url' });
