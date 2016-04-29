@@ -26,9 +26,21 @@ module.exports = {
 
     var deferred = q.defer();
 
-    var options;
+    var newCookieJar = request.jar();
+    var options =  {
+      jar: newCookieJar,
+      gzip: true,
+      timeout: 5000,
+      strictSSL: false,
+      followAllRedirects: true,
+      gzip: true,
+      agentOptions: {
+        rejectUnauthorized: false
+      }
+    };
+    
     if (ua) {
-      options = { headers: { 'User-Agent': ua } };
+      options.headers = { 'User-Agent': ua };
     }
 
     getCss(url, options)
