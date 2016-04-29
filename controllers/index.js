@@ -5,6 +5,8 @@ module.exports = function(obj) {
   var model = {};
 
   this.links = [
+    { name: 'eBay', url: 'http://www.ebay.com' },
+    {name : 'eBay Darkstar', url: 'http://go.corp.ebay.com/darkstar'},
     { name: 'Google', url: 'http://google.com' },
     { name: 'Yahoo', url: 'http://yahoo.com' },
     { name: 'Twitter', url: 'http://twitter.com' },
