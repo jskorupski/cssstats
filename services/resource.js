@@ -26,7 +26,20 @@ module.exports = {
 
     var deferred = q.defer();
 
-    getCss(url)
+    var newCookieJar = request.jar();
+
+    getCss(url,
+        {
+          jar: newCookieJar,
+          gzip: true,
+          timeout: 5000,
+          strictSSL: false,
+          followAllRedirects: true,
+          gzip: true,
+          agentOptions: {
+            rejectUnauthorized: false
+          }
+        })
       .then(function(response) {
         deferred.resolve(response);
       })
