@@ -29,7 +29,6 @@ module.exports = {
     var newCookieJar = request.jar();
     var options =  {
       jar: newCookieJar,
-      gzip: true,
       timeout: 5000,
       strictSSL: false,
       followAllRedirects: true,
